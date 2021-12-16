@@ -3,10 +3,11 @@ import '../App.css';
 
 export default function Navbar(){
     return(
-        <>
-        <img src={hero} className="App-logo" alt="logo" />
-        <h1>something</h1>
-        <p>something</p>
-        </>
+        <section className ="hero">
+        <img src={hero} className="hero--photo" alt="hero" />
+        <h1 className="hero--header">Online Experiences</h1>
+        <p className="hero--text">Join unique interactive activities led by 
+            one-of-a-kind hosts—all without leaving home.</p>
+        </section>
     )
 }

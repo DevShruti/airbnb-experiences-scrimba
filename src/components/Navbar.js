@@ -1,10 +1,10 @@
-import logo from '../images/airbnb-logo.png';
+// import logo from '../images/airbnb-logo.png';
 import '../App.css';
 
-export default function Navbar(){
-    return(
+export default function Navbar() {
+    return (
         <nav>
-        <img src={logo} className="App-logo" alt="logo" />
+            <img src="../images/airbnb-logo.png" className="nav--logo" />
         </nav>
     )
 }

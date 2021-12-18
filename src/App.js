@@ -7,7 +7,8 @@ function App() {
   const names = data.map( item => {
     return( 
    <Card 
-   img={item.Coverimg}
+   key={item.id}
+   img={item.coverImg}
    rating={item.stats.rating}
    reviewCount={item.stats.reviewCount}
    location={item.location}
@@ -19,11 +20,14 @@ function App() {
   
   })  
   return (
-     <>
-     <Navbar/>
-     <Hero/>
-     {names}
-     </>
+     
+     <div>
+            <Navbar />
+            <section className="cards-list">
+                {names}
+            </section>
+        </div>
+    
   );
 }
 
